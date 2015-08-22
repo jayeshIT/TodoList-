@@ -1,0 +1,10 @@
+<Alloy>
+	<!-- ------------------------------------------------------
+	LISTVIEW ITEM TEMPLATE FOR LEFT DRAWER(YOU CAN SAY IT AS TABLEVIE ROW)
+	------------------------------------------------------ -->
+	<ItemTemplate name="itemtemplate_drawer" id="itemtemplate_drawer">
+		<ImageView bindId="image" id="left_imageview"/>
+		<Label bindId="lbl" id="title_label"/>
+		<View bindId="view_bottom" id="view_bottom"/>
+	</ItemTemplate>
+</Alloy>

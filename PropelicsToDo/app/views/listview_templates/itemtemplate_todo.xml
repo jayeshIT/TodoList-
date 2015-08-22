@@ -1,0 +1,13 @@
+<Alloy>
+	<!-- ------------------------------------------------------
+	LISTVIEW ITEM TEMPLATE FOR LISTING OF TASK (YOU CAN SAY IT AS TABLEVIE ROW)
+	------------------------------------------------------ -->
+	<ItemTemplate id="itemtemplate_todo" name="itemtemplate_todo">
+		<View id="view">
+			<ImageView id="left_image" bindId="image_img"/>
+			<Label id="content_label" bindId="content_lbl"/>
+			<Label id="date_label" bindId="date_lbl"/>
+			<Button id="check_button" bindId="check_btn"/>
+		</View>
+	</ItemTemplate>
+</Alloy>

@@ -1,0 +1,62 @@
+
+"#itemtemplate_todo[platfrom=android]":
+{
+	height: 100,
+	backgroundSelectedColor: "transparent",
+	backgroundColor: "transparent"
+},
+
+"#itemtemplate_todo[platform=ios]":
+{
+	height: 100,
+	backgroundSelectedColor: "transparent",
+	selectionStyle: Titanium.UI.iPhone.TableViewCellSelectionStyle.NONE,
+	backgroundColor: "transparent"
+},
+"#view":
+{
+	left: 0,
+	right: 0,
+	bottom: 0
+},
+"#left_image":
+{
+	left: 5,
+	top: 10,
+	height: 60,
+	width: 60,
+	image: "/appicon.png"
+},
+"#content_label":
+{
+	top: 5,
+	left: 75,
+	right: 10,
+	height: 35,
+	right: 20,
+	font: {
+		fontWeight: 'bold',
+		fontSize: 16
+	},
+	color: Alloy.CFG.AppColors_default.color_header
+},
+"#date_label":
+{
+	top: 40,
+	left: 75,
+	right: 20,
+	font: {
+		fontWeight: 'bold',
+		fontSize: 14
+	},
+	color: 'black'
+},
+"#check_button":
+{
+	right: 5,
+	height: 30,
+	width: 90,
+	bottom: 5,
+	style: 1,
+	borderRadius : 4
+}

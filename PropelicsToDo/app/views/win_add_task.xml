@@ -1,0 +1,20 @@
+<Alloy>
+	<Window id="win_add_task" class="win_class">
+		<!-- ----------------------------------------------------------------------------
+		RIGHT BUTTON NAIVATION FOR IOS
+		---------------------------------------------------------------------------- -->
+		<RightNavButton platform="ios">
+			<Button class="rightnav_btn" id="right_nav_btn" onClick="save_task"/>
+		</RightNavButton>
+		<!-- ----------------------------------------------------------------------------
+		RIGHT BUTTON NAIVATION FOR ANDROID
+		---------------------------------------------------------------------------- -->
+		<Require type="view" src="android_header" id="navBar" platform="android"/>
+		<!-- ----------------------------------------------------------------------------
+		TEXT AREA ADD IMAGEVIEW AND ADD IMAGE BUTTON
+		---------------------------------------------------------------------------- -->
+		<TextArea id="txt_content"/>
+		<ImageView id="image_view"/>
+		<Button id="add_image" onClick="take_image"/>
+	</Window>
+</Alloy>

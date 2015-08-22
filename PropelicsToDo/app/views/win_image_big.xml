@@ -1,0 +1,11 @@
+<Alloy>
+	<Window id="win_image_big">
+		<View id="top_view">
+			<Label id="left_button" onClick="remove"/>
+			<Label id="title"/>
+		</View>
+		<ScrollView  id="scr_view">
+			<ImageView  id="img_view"/>
+		</ScrollView>
+	</Window>
+</Alloy>

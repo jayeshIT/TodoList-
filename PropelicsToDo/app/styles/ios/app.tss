@@ -1,0 +1,111 @@
+//------------------------------------------------------------------------------------------------
+//-------------------------------------GLOBAL PROPERTY FOR window foR IOS  -----------------------
+//------------------------------------------------------------------------------------------------
+".win_class":
+{
+	navBarHidden: false,
+	fullscreen: false,
+	navTintColor:Alloy.CFG.AppColors_default.color_white,
+	tintColor: Alloy.CFG.AppColors_default.color_white,
+	backgroundColor: Alloy.CFG.AppColors_default.color_winBackground,
+	titleAttributes:{
+		color: Alloy.CFG.AppColors_default.color_white,
+		font: {
+			fontSize: Alloy.CFG.FontSize.F19
+		}
+	},
+	barImage: "/images/topnav.png"
+},
+//------------------------------------------------------------------------------------------------
+//-------------------------------------DRAWER ICON  -----------------------
+//------------------------------------------------------------------------------------------------
+".leftnav_btn":
+{
+	height: 30,
+	width: 30,
+	backgroundImage: '/images/drawer/drawer.png',
+	backgroundColor: 'transparent'
+},
+//------------------------------------------------------------------------------------------------
+//-------------------------------------RIGHT NAVIGATION BUTTON IOS   -----------------------------
+//------------------------------------------------------------------------------------------------
+".rightnav_btn":
+{
+	right: 5,
+	font:
+	{
+		fontSize: 30
+	},
+	height: 30,
+	width: 30,
+	backgroundColor: 'transparent',
+	color: 'white',
+	style: 1
+},
+//------------------------------------------------------------------------------------------------
+//-------------------------------------GLOBAL PROPERTY FOR LISTVIEW-------------------------------
+//------------------------------------------------------------------------------------------------
+"ListView":{
+
+	separatorInsets:
+	{
+		left: 0
+	},
+	backgroundSelectedColor: 'trsnaparent',
+	selectedBackgroundColor: 'trsnaparent',
+	separatorStyle: 1,
+	separatorColor: 'black',
+	footerTitle: '',
+	showVerticalScrollIndicator: false
+},
+"ItemTemplate":
+{
+	backgroundColor: 'transparent',
+	backgroundSelectedColor: 'trsnaparent'
+},
+"#all_listview":
+{
+	top: 0,
+	left: 0,
+	right: 0,
+	backgroundColor: Alloy.CFG.AppColors_default.color_winBackground
+},
+//------------------------------------------------------------------------------------------------
+//--------------------------------------------win_add_task.js-------------------------------------
+//--------------------------------------------win_edit_task.js------------------------------------
+//-------------------------------------------commonn for text area imageview and add image button---------------
+//------------------------------------------------------------------------------------------------
+"#txt_content":
+{
+	top: 10,
+	left: 10,
+	right: 10,
+	height: 100,
+	borderColor:Alloy.CFG.AppColors_default.color_border,
+	backgroundColor: Alloy.CFG.AppColors_default.color_white,
+	maxLength: 500,
+	font: {
+		fontSize: Alloy.CFG.FontSize.F14
+	},
+	autocapitalization: Titanium.UI.TEXT_AUTOCAPITALIZATION_NONE,
+	borderRadius: 4,
+	borderWidth: 1
+},
+"#image_view":
+{
+	top: 120,
+	image: "/appicon.png",
+	height: 100,
+	width: 100
+},
+"#add_image":
+{
+	top: 230,
+	left: 10,
+	right: 10,
+	title: 'Add Image',
+	style: 1,
+	backgroundColor: '#202E40',
+	height: 30,
+	color: 'white'
+},

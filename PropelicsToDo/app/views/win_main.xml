@@ -1,0 +1,29 @@
+<Alloy>
+	<!-- -------------------------------------------------------
+	//LEFT SIDE DRAWER USIING TITANIUM CONTROL FOP IOS 
+	------------------------------------------------------- -->
+	<Widget id="drawer" src="nl.fokkezb.drawer" platform="ios">
+		<Window module="xp.ui" role="leftWindow" id="left_win">
+			<ListView  id="drawer_listview" defaultItemTemplate="itemtemplate_drawer">
+				<Templates>
+					<Require src="listview_templates/itemtemplate_drawer"/>
+				</Templates>
+				<ListSection id="list_section"></ListSection>
+			</ListView>
+		</Window>
+	</Widget>
+	<!-- -------------------------------------------------------
+	//LEFT SIDE DRAWER USIING TITANIUM CONTROL FOP ANDROID 
+	------------------------------------------------------- -->
+	<Widget id="drawer" src="nl.fokkezb.drawer" platform="android">
+		<Window module="xp.ui" role="leftWindow" id="left_win">
+			<ListView  id="drawer_listview" defaultItemTemplate="itemtemplate_drawer">
+				<Templates>
+					<Require src="listview_templates/itemtemplate_drawer"/>
+				</Templates>
+				<ListSection id="list_section"></ListSection>
+			</ListView>
+		</Window>
+	</Widget>
+</Alloy>
+

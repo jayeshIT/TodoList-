@@ -1,0 +1,80 @@
+//------------------------------------------------------------------------------------------------
+//-------------------------------------GLOBAL PROPERTY FOR window for android --------------------
+//------------------------------------------------------------------------------------------------
+".win_class":
+{
+	navBarHidden: true,
+	fullscreen: true,
+	backgroundColor: 'white',
+	exitOnClose: false
+},
+//------------------------------------------------------------------------------------------------
+//-------------------------------------GLOBAL PROPERTY FOR LISTVIEW-------------------------------
+//------------------------------------------------------------------------------------------------
+"ListView":{
+	separatorInsets:
+	{
+		left: 0
+	},
+	backgroundSelectedColor: 'trsnaparent',
+	selectedBackgroundColor: 'trsnaparent',
+	separatorStyle: 1,
+	separatorColor: 'transparent',
+	showVerticalScrollIndicator: false
+},
+"ItemTemplate":
+{
+	backgroundColor: 'transparent',
+	backgroundSelectedColor: 'trsnaparent'
+},
+"#all_listview":
+{
+	top: 44,
+	left: 0,
+	right: 0,
+	backgroundColor: Alloy.CFG.AppColors_default.color_winBackground
+},
+//------------------------------------------------------------------------------------------------
+//--------------------------------------------win_add_task.js-------------------------------------
+//--------------------------------------------win_edit_task.js------------------------------------
+//-------------------------------------------commonn for text area imageview and add image button---------------
+//------------------------------------------------------------------------------------------------
+"#txt_content":
+{
+	top: 60,
+	left: 10,
+	right: 10,
+	height: 100,
+	backgroundColor: Alloy.CFG.AppColors_default.color_white,
+	maxLength: 500,
+	font: {
+		fontSize: Alloy.CFG.FontSize.F14
+	},
+	borderRadius: 4,
+	borderWidth: 1,
+	autocapitalization: Titanium.UI.TEXT_AUTOCAPITALIZATION_NONE,
+	autocorrect: false,
+	color : Alloy.CFG.AppColors_default.color_header,
+	softKeyboardOnFocus: Titanium.UI.Android.SOFT_KEYBOARD_HIDE_ON_FOCUS,
+	borderColor:Alloy.CFG.AppColors_default.color_border,
+	hintText: 'Task Description'
+},
+"#image_view":
+{
+	top: 170,
+	image: "/appicon.png",
+	height: 100,
+	width: 100
+},
+"#add_image":
+{
+	top: 290,
+	left: 10,
+	right: 10,
+	title: 'Add Image',
+	style: 1,
+	backgroundColor: '#202E40',
+	height: 30,
+	color: 'white'
+},
+

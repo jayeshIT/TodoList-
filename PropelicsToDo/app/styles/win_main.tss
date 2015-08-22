@@ -1,0 +1,57 @@
+/// //--------------------------------------------------------------------------------------------
+//------------------------------------- drawer for IOS  ------------------------------------------
+//------------------------------------------------------------------------------------------------
+"#drawer[platfrom=ios]": {
+	openDrawerGestureMode: "OPEN_MODE_ALL",
+	closeDrawerGestureMode: "CLOSE_MODE_MARGIN",
+	leftDrawerWidth: 200
+},
+/// //------------------------------------------------------------------------------------------------
+//------------------------------------- drawer for android   -----------------------------------------
+//----------------------------------------------------------------------------------------------------
+"#drawer[platfrom=android]":
+{
+	openDrawerGestureMode: "OPEN_MODE_ALL",
+	closeDrawerGestureMode: "CLOSE_MODE_MARGIN",
+	navBarHidden: true,
+	fullscreen: true,
+	leftDrawerWidth: 200,
+	orientationModes: []
+},
+"#left_win":
+{
+	backgroundColor: Alloy.CFG.AppColors_default.color_header,
+	fullscreen: true
+},
+/// //------------------------------------------------------------------------------------------------
+//------------------------------------- drawer listview for ios   ------------------------------------
+//----------------------------------------------------------------------------------------------------
+"#drawer_listview[platform=ios]":
+{
+	showVerticalScrollIndicator: false,
+	top: 25,
+	left: 0,
+	backgroundColor: Alloy.CFG.AppColors_default.color_header,
+	separatorStyle: 1,
+	separatorColor: 'transparent',
+	separatorInsets:
+	{
+		left: 0
+	}
+},
+/// //------------------------------------------------------------------------------------------------
+//------------------------------------- drawer listview for android    -------------------------------
+//----------------------------------------------------------------------------------------------------
+"#drawer_listview[platfrom=android]":
+{
+	showVerticalScrollIndicator: false,
+	top: -1,
+	left: 0,
+	backgroundColor: Alloy.CFG.AppColors_default.color_header,
+	separatorStyle: 1,
+	separatorColor: 'transparent',
+	separatorInsets:
+	{
+		left: 0
+	}
+}

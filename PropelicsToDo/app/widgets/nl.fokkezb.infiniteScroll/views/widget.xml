@@ -1,0 +1,11 @@
+<Alloy>
+	<FooterView>
+		<View id="is" class="is">
+			<View id="isCenter" class="isCenter">
+				<Label id="isText" class="isText" />
+				<!-- <ActivityIndicator id="isIndicator" class="isIndicator" message="Loading..." /> -->
+				<ActivityIndicator id="isIndicator" class="isIndicator"/>
+			</View>
+		</View>
+	</FooterView>
+</Alloy>

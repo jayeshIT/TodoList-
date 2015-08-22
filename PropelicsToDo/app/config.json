@@ -1,0 +1,42 @@
+{
+	"global": {
+		"FontSize": {
+			"F30": 32,
+			"F20": 22,
+			"F19": 21,
+			"F18": 20,
+			"F17": 19,
+			"F16": 18,
+			"F15": 17,
+			"F14": 16,
+			"F13": 15,
+			"F12": 14,
+			"F11": 13,
+			"F10": 12,
+			"F9": 11,
+			"F8": 10,
+			"F7": 9
+		},
+		"AppColors_default": {
+			"color_winBackground": "white",
+			"color_white": "#FFFFFF",
+			"color_black": "#000000",
+			"color_gray": "#666666",
+			"color_header": "#27384a",
+			"color_drawer_seperator": "#344b63",
+			"color_border": "black",
+			"color_orange": "#ff9900"
+		}
+	},
+	"env:development": {},
+	"env:test": {},
+	"env:production": {},
+	"os:android": {},
+	"os:blackberry": {},
+	"os:ios": {},
+	"os:mobileweb": {},
+	"dependencies": {
+		"nl.fokkezb.drawer": "*",
+		"nl.fokkezb.infiniteScroll": "*"
+	}
+}

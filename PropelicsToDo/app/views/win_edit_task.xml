@@ -1,0 +1,34 @@
+<Alloy>
+	<Window id="win_edit_task" class="win_class">
+		
+		<!-- ----------------------------------------------------------------------------
+		RIGHT BUTTON NAIVATION FOR IOS
+		---------------------------------------------------------------------------- -->
+		<RightNavButton platform="ios">
+			<Button class="rightnav_btn" id="right_nav_btn" onClick="save_task"/>
+		</RightNavButton>
+		<!-- ----------------------------------------------------------------------------
+		RIGHT BUTTON NAIVATION FOR ANDROID
+		---------------------------------------------------------------------------- -->
+		<Require type="view" src="android_header" id="navBar" platform="android"/>
+		<!-- ----------------------------------------------------------------------------
+		TEXT AREA ADD IMAGEVIEW AND ADD IMAGE BUTTON
+		---------------------------------------------------------------------------- -->
+		<TextArea id="txt_content"/>
+		<ImageView id="image_view" onClick="bigImage"/>
+		<Button id="add_image" onClick="take_image"/>
+		<!-- ----------------------------------------------------------------------------
+		STATUS LABEL
+		---------------------------------------------------------------------------- -->
+		<Label id="status_lbl"/>
+		<!-- ----------------------------------------------------------------------------
+		STATUS CHANGE BUTTON
+		---------------------------------------------------------------------------- -->
+		<Button id="status_button" onClick="change_status"/>
+		<!-- ----------------------------------------------------------------------------
+		SHARE AND DELETE BUTTON
+		---------------------------------------------------------------------------- -->
+		<Button id="delete_button" onClick="delete_model"/>
+		<Button id="share_button" onClick="share_model"/>
+	</Window>
+</Alloy>

@@ -1,0 +1,33 @@
+"#itemtemplate_drawer[platform=android]":
+{
+	height: 40,
+	backgroundColor: Alloy.CFG.AppColors_default.color_header
+},
+"#itemtemplate_drawer[platform=ios]":
+{
+	height: 40,
+	backgroundColor: Alloy.CFG.AppColors_default.color_header,
+	selectionStyle: Titanium.UI.iPhone.ListViewCellSelectionStyle.NONE
+},
+"#left_imageview":
+{
+	height: 20,
+	width: 20,
+	left: 10
+},
+"#title_label":
+{
+	left: 45,
+	color:  Alloy.CFG.AppColors_default.color_white,
+	font: {
+		fontSize: Alloy.CFG.FontSize.F15
+	}
+},
+"#view_bottom":
+{
+	bottom: 0,
+	left: 10,
+	right: 10,
+	height: 0.5,
+	backgroundColor: Alloy.CFG.AppColors_default.color_drawer_seperator
+}
