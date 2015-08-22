@@ -1,18 +1,13 @@
-Welcome to your Appcelerator Titanium Mobile Project
-
-This is a blank project.  Start by editing your application's app.js to 
-make your first mobile project using Titanium.
-
-
-
-----------------------------------
-Stuff our legal folk make us say:
-
-Appcelerator, Appcelerator Titanium and associated marks and logos are 
-trademarks of Appcelerator, Inc. 
-
-Titanium is Copyright (c) 2008-2013 by Appcelerator, Inc. All Rights Reserved.
-
-Titanium is licensed under the Apache Public License (Version 2). Please
-see the LICENSE file for the full license.
-
+// Alloy.Globals.someGlobalFunction = function(){};
+//------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------------
+// Napp drawer is used i this app it has 3 options
+// When you add task it goes in pending bucket
+//Option 1 : All  - All task that are with status last added/edited is on first
+//Option 2 : Pending - Pending task yet to over eith latest added/edited
+//Option 3 : comepted -Comepted task whic you mark lastest as competed
+//------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------------
+//in Edit section click on image to get big image.
