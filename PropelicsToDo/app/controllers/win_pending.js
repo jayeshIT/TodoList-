@@ -37,6 +37,9 @@ var displayTasksSuccess = function() {
 	ToDos.each(function(marker) {
 		var image_data = utility.Utility.getImage(marker.get('image'), false, false);
 		dataitems.push({
+			properties : {
+				searchableText : marker.get('content')
+			},
 			id : marker.get('id'),
 			type : 'from_pending',
 			image_img : {
@@ -99,7 +102,7 @@ var openEdit = function(e) {
 //-------------------------------------------------------------------------------------------------
 //----------------------- WINDOWS LEVEL EVENT -----------------------------------------------------
 //-------------------------------------------------------------------------------------------------
-$.win_minha_courses.addEventListener('androidback', function(e) {
+$.win_pending.addEventListener('androidback', function(e) {
 	var activity = Titanium.Android.currentActivity;
 	activity.finish();
 });

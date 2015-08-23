@@ -32,8 +32,11 @@ if (OS_IOS) {
 var displayTasksSuccess = function() {
 	dataitems = [];
 	ToDos.each(function(marker) {
-		var image_data = utility.Utility.getImage(marker.get('image'), false,false);
+		var image_data = utility.Utility.getImage(marker.get('image'), false, false);
 		dataitems.push({
+			properties : {
+				searchableText : marker.get('content')
+			},
 			id : marker.get('id'),
 			type : 'from_completed',
 			image_img : {
@@ -97,7 +100,7 @@ var openEdit = function(e) {
 //-------------------------------------------------------------------------------------------------
 //----------------------- WINDOWS LEVEL EVENT -----------------------------------------------------
 //-------------------------------------------------------------------------------------------------
-$.win_meus_conta.addEventListener('androidback', function(e) {
+$.win_completed.addEventListener('androidback', function(e) {
 	var activity = Titanium.Android.currentActivity;
 	activity.finish();
 });

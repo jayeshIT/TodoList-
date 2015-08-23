@@ -19,7 +19,7 @@
 	backgroundSelectedColor: 'trsnaparent',
 	selectedBackgroundColor: 'trsnaparent',
 	separatorStyle: 1,
-	separatorColor: 'transparent',
+	separatorColor: 'gray',
 	showVerticalScrollIndicator: false
 },
 "ItemTemplate":
@@ -77,4 +77,11 @@
 	height: 30,
 	color: 'white'
 },
-
+//------------------------------------------------------------------------------------------------
+//------------------------------------------Search bar--------------------------------------------
+//------------------------------------------------------------------------------------------------
+"#search_bar":
+{
+	color : 'black',
+	hintText : 'Seach'
+}

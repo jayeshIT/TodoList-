@@ -10,7 +10,9 @@
 			<RightNavButton>
 				<Button class="rightnav_btn" id="right_nav_btn" onClick="add_task_function"/>
 			</RightNavButton>
+			
 			<ListView id="all_listview" defaultItemTemplate="itemtemplate_todo" onItemclick="openEdit">
+				<SearchBar id="search_bar" />
 				<Templates>
 					<Require src="listview_templates/itemtemplate_todo"/>
 				</Templates>
@@ -24,6 +26,7 @@
 	<Window id="win_center" module="xp.ui" platform="android" class="win_class">
 		<Require type="view" src="android_header" id="navBar"/>
 		<ListView id="all_listview" defaultItemTemplate="itemtemplate_todo" onItemclick="openEdit">
+			<SearchBar id="search_bar" />
 			<Templates>
 				<Require src="listview_templates/itemtemplate_todo"/>
 			</Templates>
