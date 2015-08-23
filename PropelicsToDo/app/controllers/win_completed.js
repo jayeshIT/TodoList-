@@ -1,5 +1,5 @@
 //-------------------------------------------------------------------------------------------------
-//-----------------------  VARIABLES  -------------------------------------------------------------
+//-----------------------  VARIABLES globals -------------------------------------------------------------
 //-------------------------------------------------------------------------------------------------
 var utility = require('utility');
 var ToDos = Alloy.Collections.toDoList;
@@ -91,7 +91,6 @@ var openEdit = function(e) {
 	var id = item.id;
 	var type = item.type;
 	var data_pass = ToDos.get(id);
-	Ti.API.info('---- JS SEND :' + JSON.stringify(data_pass));
 	opennav('win_edit_task', {
 		data : data_pass,
 		type : type,
@@ -103,4 +102,7 @@ var openEdit = function(e) {
 $.win_completed.addEventListener('androidback', function(e) {
 	var activity = Titanium.Android.currentActivity;
 	activity.finish();
+});
+
+$.win_completed.addEventListener('close', function(e) {
 });

@@ -1,5 +1,5 @@
 //-------------------------------------------------------------------------------------------------
-//-----------------------  VARIABLES  -------------------------------------------------------------
+//-----------------------  VARIABLES globals-------------------------------------------------------------
 //-------------------------------------------------------------------------------------------------
 var utility = require('utility');
 var dataitems_append = [];
@@ -106,4 +106,5 @@ $.win_pending.addEventListener('androidback', function(e) {
 	var activity = Titanium.Android.currentActivity;
 	activity.finish();
 });
-
+$.win_pending.addEventListener('close', function(e) {
+});
